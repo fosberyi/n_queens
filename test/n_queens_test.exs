@@ -6,8 +6,13 @@ defmodule NQueensTest do
     ]
 
     result = NQueens.solve(1)
+    IO.inspect result
 
     assert Enum.member?(result, possible_solution)
+  end
+
+  test "2-queens has no solution" do
+    assert NQueens.solve(2) == []
   end
 
   test "4 queens includes a known solution" do
