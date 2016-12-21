@@ -1,6 +1,6 @@
 # NQueens
 
-**TODO: Add description**
+Using Elixir to do the N Queens problem. From Elixir Sips by Josh Adams.
 
 ## Installation
 

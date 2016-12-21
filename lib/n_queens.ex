@@ -59,9 +59,11 @@ defmodule NQueens do
   defp row_for(n, {_x, y}) do
     for x <- 0..n-1, do: {x, y}
   end
+
   defp column_for(n, {x, _y}) do
     for y <- 0..n-1, do: {x, y}
   end
+
   defp diag_for(n, {x, y}) do
     for {px, py} <- possible_positions(n),
       abs(x-px) == abs(y-py),
